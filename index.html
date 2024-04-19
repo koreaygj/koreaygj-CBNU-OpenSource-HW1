@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github-Finder</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/search-container.css"/>
+    <link rel="stylesheet" href="./css/user-container.css"/>
+    <link rel="stylesheet" href="./css/repo-container.css"/>
+    <link rel="stylesheet" href="./css/loading.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Github Finder</h1>
+    </header>
+    <div>
+      <div class="search-container">
+        <h2>Search Github user</h2>
+        <h3>Enter Github Username to find User profile & repo</h3>
+        <input class="search" type="text"></input>
+      </div>
+      <div class="spinner-container">
+        <h2>Loading...</h2>
+        <img src="./img/spinner.gif" width="80px"/>
+      </div>
+      <h1 class="not-found">Can't find user in github...</h1>
+      <div class="user-container" >
+        <div class="user-profile">
+          <h2 class="user-name"></h2>
+          <img class="user-avatar"></img>
+          <div class="user-profile-link"></div>
+        </div>
+        <div class="user-right-container">
+          <div class="user-status">
+            <div class="user-followers"></div>
+            <div class="user-following"></div>
+            <div class="user-public-repo"></div>
+          </div>
+          <div class="user-details">
+            <div class="user-fullname content"></div>
+            <div class="user-company content"></div>
+            <div class="user-location content"></div>
+            <div class="user-blog content"></div>
+            <div class="user-created-at content"></div>
+          </div>
+          <img class="github-grass"></img>
+        </div>
+      </div>
+      <div class="user-repo-container">
+        <h2>Repository</h2>
+        <div class="repo-list">
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/mainView.js"></script>
+  </body>
+</html>
